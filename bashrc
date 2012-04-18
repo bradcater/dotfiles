@@ -13,3 +13,6 @@ export PATH=/home/bradcater/.rvm/gems/ruby-1.9.1-p378/bin:/home/bradcater/.rvm/g
 export PGDATA=/usr/local/pgsql/data/
 
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+
+export SVN_PATH=/usr/bin/svn
+export TRUNK_PATH=/home/bradcater/trunk
