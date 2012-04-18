@@ -1,0 +1,39 @@
+Host tigris
+  HostName tigris.panjiva.com
+  Port 23377
+  User deploy
+
+Host white
+  HostName white.panjiva.com
+  Port 23377
+  User deploy
+
+Host yellow
+  HostName yellow.panjiva.com
+  Port 23377
+  User deploy
+
+Host yukon
+  HostName yukon.panjiva.com
+  Port 23377
+  User deploy
+
+Host dev
+  HostName yukon.panjiva.com
+  LocalForward 22723 localhost:22723
+  Port 23377
+  User brad
+
+Host dev2
+  HostName yukon.panjiva.com
+  LocalForward 22724 localhost:22724
+  Port 23377
+  User brad
+
+Host ec2
+  HostName 107.22.34.122
+  IdentityFile /home/bradcater/.ssh/bridj.pem
+  User ec2-user
+
+Host *
+  ServerAliveInterval 30
