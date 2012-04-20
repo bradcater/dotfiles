@@ -14,5 +14,33 @@ export PGDATA=/usr/local/pgsql/data/
 
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 
+# Panjiva stuff
 export SVN_PATH=/usr/bin/svn
 export TRUNK_PATH=/home/bradcater/trunk
+alias reb='RAILS_ENV=development_brad'
+alias rebn='RAILS_ENV=development_brad_new'
+function checkout {
+  svn co svn+ssh://brad@svn.panjiva.com/home/svn/panjiva_web/branches/"$1"
+}
+function commit {
+  script/commit "$@"
+}
+function create {
+  svn copy ^/trunk ^/branches/"$1"
+}
+function delete {
+  svn delete ^/branches/"$1"
+}
+function merge {
+  svn merge ^/trunk
+}
+function reintegrate {
+  svn merge --reintegrate ^/branches/"$1"
+}
+function switch {
+  if [ "$1" == "trunk" ]; then
+    svn switch ^/trunk
+  else
+    svn switch ^/branches/"$1"
+  fi
+}
