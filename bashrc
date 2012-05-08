@@ -20,6 +20,9 @@ export SVN_PATH=/usr/bin/svn
 export TRUNK_PATH=/home/bradcater/trunk
 alias reb='RAILS_ENV=development_brad'
 alias rebn='RAILS_ENV=development_brad_new'
+function bmerge {
+  svn up && merge && svn up && commit
+}
 function checkout {
   svn co svn+ssh://brad@svn.panjiva.com/home/svn/panjiva_web/branches/"$1"
 }

@@ -1,3 +1,18 @@
+Host amazon
+  HostName amazon.panjiva.com
+  Port 23377
+  User deploy
+
+Host bo
+  HostName bo.panjiva.com
+  Port 23377
+  User deploy
+
+Host omo
+  HostName omo.panjiva.com
+  Port 23377
+  User deploy
+
 Host tigris
   HostName tigris.panjiva.com
   Port 23377
@@ -30,7 +45,12 @@ Host dev2
   Port 23377
   User brad
 
-Host ec2
+Host betterif
+  HostName 23.21.38.100
+  IdentityFile /home/bradcater/.ssh/betterif.pem
+  User ec2-user
+
+Host bridj
   HostName 107.22.34.122
   IdentityFile /home/bradcater/.ssh/bridj.pem
   User ec2-user
