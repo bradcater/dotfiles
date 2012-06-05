@@ -19,6 +19,7 @@ export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 export SVN_PATH=/usr/bin/svn
 export TRUNK_PATH=/home/bradcater/trunk
 alias reb='RAILS_ENV=development_brad'
+alias rebr='RAILS_ENV=development_brad_remote'
 alias rebn='RAILS_ENV=development_brad_new'
 function bmerge {
   svn up && merge && svn up && commit
@@ -47,4 +48,7 @@ function switch {
   else
     svn switch ^/branches/"$1"
   fi
+}
+function endeca {
+   ssh -L 8888:localhost:8888 -p 23377 brad@research.panjiva.com
 }
