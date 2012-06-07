@@ -3,6 +3,11 @@ Host amazon
   Port 23377
   User deploy
 
+Host black
+  HostName black.panjiva.com
+  Port 23377
+  User deploy
+
 Host bo
   HostName bo.panjiva.com
   Port 23377
