@@ -1,6 +1,7 @@
 # Standard .bashrc extensions.
 
 alias ack="ack-grep"
+alias sus="sort | uniq -c | sort -nr"
 
 alias upgrade="sudo apt-get update && sudo apt-get upgrade"
 
