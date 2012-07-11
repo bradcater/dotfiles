@@ -1,3 +1,5 @@
 localhost:5432:betterif_development:betterif_user:betterif
 localhost:5432:betterif_production:betterif_user:betterif
 localhost:5432:betterif_test:betterif_user:betterif
+
+localhost:5432:robbinhood_development:robbinhood_user:robbinhood

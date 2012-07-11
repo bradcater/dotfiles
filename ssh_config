@@ -18,6 +18,11 @@ Host kenai
   Port 23377
   User deploy
 
+Host loire
+  HostName loire.panjiva.com
+  Port 23377
+  User deploy
+
 Host omo
   HostName omo.panjiva.com
   Port 23377

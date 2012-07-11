@@ -51,5 +51,12 @@ function switch {
   fi
 }
 function endeca {
-   ssh -L 8888:localhost:8888 -p 23377 brad@research.panjiva.com
+  ssh -L 8888:localhost:8888 -p 23377 brad@research.panjiva.com
+}
+
+function psq {
+  psql -U ror_postgres -h yukon.panjiva.com -p 34122 panjiva_development_brad
+}
+function psqa {
+  psql -U ror_postgres -h yukon.panjiva.com -p 34148 panjiva_development_andrew
 }
