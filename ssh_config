@@ -28,6 +28,11 @@ Host omo
   Port 23377
   User deploy
 
+Host seine
+  HostName seine.panjiva.com
+  Port 23377
+  User deploy
+
 Host staging
   HostName staging.panjiva.com
   Port 23377
