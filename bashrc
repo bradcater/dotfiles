@@ -5,6 +5,8 @@ alias sus="sort | uniq -c | sort -nr"
 
 alias upgrade="sudo apt-get update && sudo apt-get upgrade"
 
+alias fixwindows="gtk-window-decorator --replace &"
+
 #alias betterif="ssh -i ~/.ssh/betterif.pem ec2-user@23.21.38.100"
 alias betterif="mosh --ssh \"ssh -i ~/.ssh/betterif.pem\" ec2-user@23.21.38.100"
 alias bridj="ssh -i ~/.ssh/bridj.pem ec2-user@107.22.34.122"
