@@ -27,6 +27,7 @@ export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 export SVN_PATH=/usr/bin/svn
 export TRUNK_PATH=/home/bradcater/trunk
 alias reb='RAILS_ENV=development_brad'
+alias rea='RAILS_ENV=development_andrew'
 alias rebr='RAILS_ENV=development_brad_remote'
 alias rebn='RAILS_ENV=development_brad_new'
 function bmerge {
