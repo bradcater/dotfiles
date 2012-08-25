@@ -21,7 +21,12 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=/home/bradcater/.rvm/gems/ruby-1.9.1-p378/bin:/home/bradcater/.rvm/gems/ruby-1.9.1-p378@global/bin:/home/bradcater/.rvm/rubies/ruby-1.9.1-p378/bin:/home/bradcater/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/pgsql/bin/
 export PGDATA=/usr/local/pgsql/data/
 
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+# Taken from solr installation.
+#export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+# Taken from
+# http://www.devsniper.com/ubuntu-12-04-install-sun-jdk-6-7/
+export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_06
+export PATH=$JAVA_HOME/bin:$PATH
 
 # Panjiva stuff
 export SVN_PATH=/usr/bin/svn
