@@ -22,7 +22,9 @@ let g:use_zen_complete_tag = 1
 
 set expandtab
 set tabstop=2
+filetype on
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.god set filetype=ruby
 
 " Enable indent folding
 " set foldenable
