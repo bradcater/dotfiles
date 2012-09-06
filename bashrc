@@ -16,6 +16,8 @@ alias crr="ssh robotretail@robotretail.webfactional.com"
 
 alias betterif_unicorn="RACK_ENV=none RAILS_ENV=development bundle exec unicorn -c config/unicorn.rb"
 
+alias large_files="find . -type f -size +50000k -exec ls -lh {} \; | awk '{ print $9 \": \" $5 }'"
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 export PATH=/home/bradcater/.rvm/gems/ruby-1.9.1-p378/bin:/home/bradcater/.rvm/gems/ruby-1.9.1-p378@global/bin:/home/bradcater/.rvm/rubies/ruby-1.9.1-p378/bin:/home/bradcater/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/pgsql/bin/
