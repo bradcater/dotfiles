@@ -16,6 +16,8 @@ alias crr="ssh robotretail@robotretail.webfactional.com"
 
 alias betterif_unicorn="RACK_ENV=none RAILS_ENV=development bundle exec unicorn -c config/unicorn.rb"
 
+# Remember that ^M is CTRL-M.
+alias dos_files="find . -name '*.php' -print0 | xargs -0 grep -l '^M$'"
 alias large_files="find . -type f -size +50000k -exec ls -lh {} \; | awk '{ print $9 \": \" $5 }'"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
