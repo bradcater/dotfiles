@@ -9,8 +9,10 @@ alias fixwindows="gtk-window-decorator --replace &"
 
 alias pdropbox="HOME=$HOME/.dropbox-panjiva /usr/bin/dropbox start -i"
 
-#alias betterif="ssh -i ~/.ssh/betterif.pem ec2-user@23.21.38.100"
 alias betterif="mosh --ssh \"ssh -i ~/.ssh/betterif.pem\" ec2-user@23.21.38.100"
+alias betterif_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@23.21.38.100"
+alias betterif_app="mosh --ssh \"ssh -i ~/.ssh/betterif.pem\" ec2-user@174.129.48.68"
+alias betterif_app_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@174.129.48.68"
 alias bridj="ssh -i ~/.ssh/bridj.pem ec2-user@107.22.34.122"
 alias crr="ssh robotretail@robotretail.webfactional.com"
 
