@@ -13,6 +13,8 @@ alias betterif="mosh --ssh \"ssh -i ~/.ssh/betterif.pem\" ec2-user@23.21.38.100"
 alias betterif_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@23.21.38.100"
 alias betterif_app="mosh --ssh \"ssh -i ~/.ssh/betterif.pem\" ec2-user@174.129.48.68"
 alias betterif_app_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@174.129.48.68"
+alias betterif_slave="mosh --ssh \"ssh -i ~/.ssh/betterif-west.pem\" ec2-user@54.245.41.132"
+alias betterif_slave_ssh="ssh -i ~/.ssh/betterif-west.pem ec2-user@54.245.41.132"
 alias bridj="ssh -i ~/.ssh/bridj.pem ec2-user@107.22.34.122"
 alias crr="ssh robotretail@robotretail.webfactional.com"
 
