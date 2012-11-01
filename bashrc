@@ -11,14 +11,24 @@ alias pdropbox="HOME=$HOME/.dropbox-panjiva /usr/bin/dropbox start -i"
 
 alias betterif="mosh --ssh \"ssh -i ~/.ssh/betterif.pem\" ec2-user@23.21.38.100"
 alias betterif_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@23.21.38.100"
+alias betterif_db="mosh --ssh \"ssh -i ~/.ssh/betterif.pem\" ec2-user@23.20.233.17"
+alias betterif_db_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@23.20.233.17"
 alias betterif_app="mosh --ssh \"ssh -i ~/.ssh/betterif.pem\" ec2-user@174.129.48.68"
 alias betterif_app_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@174.129.48.68"
 alias betterif_slave="mosh --ssh \"ssh -i ~/.ssh/betterif-west.pem\" ec2-user@54.245.41.132"
 alias betterif_slave_ssh="ssh -i ~/.ssh/betterif-west.pem ec2-user@54.245.41.132"
+
+alias chimay_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@chimay.betterific.com"
+alias dogfish_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@dogfish.betterific.com"
+alias rogue_ssh="ssh -i ~/.ssh/betterif-west.pem ec2-user@rogue.betterific.com"
+alias steamwhistle_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@steamwhistle.betterific.com"
+
 alias bridj="ssh -i ~/.ssh/bridj.pem ec2-user@107.22.34.122"
 alias crr="ssh robotretail@robotretail.webfactional.com"
 
 alias betterif_unicorn="RACK_ENV=none RAILS_ENV=development bundle exec unicorn -c config/unicorn.rb"
+
+alias clean_logs="sudo rm /var/log/tomcat7/localhost_access_log.*.txt && sudo rm /var/log/tomcat7/localhost.*.log"
 
 # Remember that ^M is CTRL-M.
 alias dos_files="find . -name '*.php' -print0 | xargs -0 grep -l '^M$'"
