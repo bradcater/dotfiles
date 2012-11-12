@@ -7,7 +7,8 @@ alias upgrade="sudo apt-get update && sudo apt-get upgrade"
 
 alias fixwindows="gtk-window-decorator --replace &"
 
-alias pdropbox="HOME=$HOME/.dropbox-panjiva /usr/bin/dropbox start -i"
+alias bdropbox="HOME=$HOME/.dropbox-betterific /usr/bin/dropbox start"
+alias pdropbox="HOME=$HOME/.dropbox-panjiva /usr/bin/dropbox start"
 
 alias betterif="mosh --ssh \"ssh -i ~/.ssh/betterif.pem\" ec2-user@23.21.38.100"
 alias betterif_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@23.21.38.100"
