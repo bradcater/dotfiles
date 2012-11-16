@@ -29,7 +29,7 @@ alias crr="ssh robotretail@robotretail.webfactional.com"
 
 alias betterif_unicorn="RACK_ENV=none RAILS_ENV=development bundle exec unicorn -c config/unicorn.rb"
 
-alias clean_logs="sudo rm /var/log/tomcat7/localhost_access_log.*.txt && sudo rm /var/log/tomcat7/localhost.*.log"
+alias clean_logs="sudo rm /var/log/tomcat7/localhost_access_log.*.txt ; sudo rm /var/log/tomcat7/localhost.*.log ; sudo rm /var/log/tomcat7/catalina.*.log"
 
 # Remember that ^M is CTRL-M.
 alias dos_files="find . -name '*.php' -print0 | xargs -0 grep -l '^M$'"
