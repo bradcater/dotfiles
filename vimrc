@@ -41,7 +41,8 @@ set tabstop=2
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.god set filetype=ruby
 
-filetype plugin indent on     " required!
+" filetype plugin indent on     " required!
+filetype plugin on     " required!
 
 " Enable indent folding
 " set foldenable
