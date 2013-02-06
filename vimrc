@@ -42,7 +42,14 @@ au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.god set filetype=ruby
 
 " filetype plugin indent on     " required!
+set nocp
 filetype plugin on     " required!
+
+vmap <silent>sf        <Plug>SQLU_Formatter<CR> 
+nmap <silent>scl       <Plug>SQLU_CreateColumnList<CR> 
+nmap <silent>scd       <Plug>SQLU_GetColumnDef<CR> 
+nmap <silent>scdt      <Plug>SQLU_GetColumnDataType<CR> 
+nmap <silent>scp       <Plug>SQLU_CreateProcedure<CR> 
 
 " Enable indent folding
 " set foldenable
