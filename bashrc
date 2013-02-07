@@ -23,6 +23,7 @@ alias chimay_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@chimay.betterific.com"
 alias steamwhistle_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@steamwhistle.betterific.com"
 alias stella_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@stella.betterific.com"
 alias sam_ssh="ssh -i ~/.ssh/betterif.pem ubuntu@sam.betterific.com"
+alias sierra_ssh="ssh -i ~/.ssh/betterif.pem ubuntu@sierra.betterific.com"
 
 alias bridj="ssh -i ~/.ssh/bridj.pem ec2-user@107.22.34.122"
 alias crr="ssh robotretail@robotretail.webfactional.com"
