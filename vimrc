@@ -52,8 +52,8 @@ nmap <silent>scdt      <Plug>SQLU_GetColumnDataType<CR>
 nmap <silent>scp       <Plug>SQLU_CreateProcedure<CR> 
 
 " Enable indent folding
-" set foldenable
-" set fdm=indent
+set foldenable
+set fdm=indent
 
 " Set space to toggle a fold
-" nnoremap <space> za
+nnoremap <space> za
