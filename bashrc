@@ -94,3 +94,7 @@ function psq {
 function psqa {
   psql -U ror_postgres -h yukon.panjiva.com -p 34148 panjiva_development_andrew
 }
+
+alias copy="~/Applications/copy/x86_64/CopyAgent"
+
+PATH=$PATH:/home/bradcater/Applications/go/bin
