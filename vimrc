@@ -40,6 +40,7 @@ set tabstop=2
 " filetype on
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.god set filetype=ruby
+au BufRead,BufNewFile *.go set filetype=go
 
 " filetype plugin indent on     " required!
 set nocp

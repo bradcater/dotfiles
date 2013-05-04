@@ -97,4 +97,9 @@ function psqa {
 
 alias copy="~/Applications/copy/x86_64/CopyAgent"
 
+alias mine="bitcoin-miner -o http://bitcoinpool.org:8332 -x socks=127.0.0.1:9050 -u BBBBB -p c1fdc274 -t 2"
+
 PATH=$PATH:/home/bradcater/Applications/go/bin
+PATH=$PATH:/home/bradcater/Applications/JWasm:/home/bradcater/Applications/JWasm/jwasm
+
+export JRUBY_OPTS="--1.9"
