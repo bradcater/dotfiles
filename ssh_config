@@ -87,3 +87,20 @@ Host bridj
 
 Host *
   ServerAliveInterval 30
+
+Host sam
+  HostName sam.betterific.com
+  IdentityFile /home/bradcater/.ssh/betterif.pem
+  User ubuntu
+Host sierra
+  HostName ec2-107-20-109-252.compute-1.amazonaws.com
+  IdentityFile /home/bradcater/.ssh/betterif.pem
+  User ubuntu
+Host steamwhistle
+  HostName steamwhistle.betterific.com
+  IdentityFile /home/bradcater/.ssh/betterif.pem
+  User ec2-user
+Host stella
+  HostName stella.betterific.com
+  IdentityFile /home/bradcater/.ssh/betterif.pem
+  User ec2-user

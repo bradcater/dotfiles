@@ -58,3 +58,8 @@ set fdm=indent
 
 " Set space to toggle a fold
 nnoremap <space> za
+
+" Taken from
+"   http://www.perturb.org/display/Make_Vim_show_hidden_characters.html
+" Toggle hidden characters
+nmap ,l :set invlist

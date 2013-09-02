@@ -22,7 +22,6 @@ alias betterif_slave_ssh="ssh -i ~/.ssh/betterif-west.pem ec2-user@54.245.41.132
 alias steamwhistle_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@steamwhistle.betterific.com"
 alias stella_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@stella.betterific.com"
 alias sam_ssh="ssh -i ~/.ssh/betterif.pem ubuntu@sam.betterific.com"
-alias sierra_ssh="ssh -i ~/.ssh/betterif.pem ubuntu@sierra.betterific.com"
 
 alias bridj="ssh -i ~/.ssh/bridj.pem ec2-user@107.22.34.122"
 alias crr="ssh robotretail@robotretail.webfactional.com"
@@ -41,6 +40,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 export PATH=/home/bradcater/.rvm/gems/ruby-1.9.1-p378/bin:/home/bradcater/.rvm/gems/ruby-1.9.1-p378@global/bin:/home/bradcater/.rvm/rubies/ruby-1.9.1-p378/bin:/home/bradcater/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/pgsql/bin/
 export PGDATA=/usr/local/pgsql/data/
+export PATH=$PATH:$HOME/bin
 
 # Taken from solr installation.
 #export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
@@ -48,58 +48,27 @@ export PGDATA=/usr/local/pgsql/data/
 # http://www.devsniper.com/ubuntu-12-04-install-sun-jdk-6-7/
 export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_06
 export PATH=$JAVA_HOME/bin:$PATH
-
-# Panjiva stuff
-export SVN_PATH=/usr/bin/svn
-export TRUNK_PATH=/home/bradcater/trunk
-alias reb='RAILS_ENV=development_brad'
-alias rea='RAILS_ENV=development_andrew'
-alias rebr='RAILS_ENV=development_brad_remote'
-alias rebn='RAILS_ENV=development_brad_new'
-function bmerge {
-  svn up && merge && svn up && commit
-}
-function checkout {
-  svn co svn+ssh://brad@svn.panjiva.com/home/svn/panjiva_web/branches/"$1"
-}
-function commit {
-  script/commit "$@"
-}
-function create {
-  svn copy ^/trunk ^/branches/"$1"
-}
-function delete {
-  svn delete ^/branches/"$1"
-}
-function merge {
-  svn merge ^/trunk
-}
-function reintegrate {
-  svn merge --reintegrate ^/branches/"$1"
-}
-function switch {
-  if [ "$1" == "trunk" ]; then
-    svn switch ^/trunk
-  else
-    svn switch ^/branches/"$1"
-  fi
-}
-function endeca {
-  ssh -L 8888:localhost:8888 -p 23377 brad@research.panjiva.com
-}
-
-function psq {
-  psql -U ror_postgres -h yukon.panjiva.com -p 34122 panjiva_development_brad
-}
-function psqa {
-  psql -U ror_postgres -h yukon.panjiva.com -p 34148 panjiva_development_andrew
-}
+alias j="JAVA_HOME=/usr/lib/jvm/jdk1.7.0_06"
+export TORQUEBOX_HOME=~/Applications/torquebox-2.3.0
+export JBOSS_HOME=$TORQUEBOX_HOME/jboss
+export JRUBY_HOME=$TORQUEBOX_HOME/jruby
+export PATH=$JRUBY_HOME/bin:$PATH
 
 alias copy="~/Applications/copy/x86_64/CopyAgent"
 
 alias mine="bitcoin-miner -o http://bitcoinpool.org:8332 -x socks=127.0.0.1:9050 -u BBBBB -p c1fdc274 -t 2"
 
-PATH=$PATH:/home/bradcater/Applications/go/bin
-PATH=$PATH:/home/bradcater/Applications/JWasm:/home/bradcater/Applications/JWasm/jwasm
+#export GOPATH=$HOME/Copy/go
+#export GOROOT=$HOME/Applications/go
+#PATH=$PATH:$HOME/Applications/go/bin:/usr/local/go/bin
+#export GOPATH=$HOME/go
+#export PATH=$PATH:$GOROOT/bin
+export GOROOT=/usr/local/go
+export GOPATH=$PATH:$GOROOT/bin
+export PATH=$PATH:/usr/local/go/bin
 
 export JRUBY_OPTS="--1.9"
+
+alias urlencode="python -c \"import sys,urllib as ul; print ul.quote_plus(' '.join(sys.argv[1:-1]))\""
+
+. ~/Applications/z/z.sh
