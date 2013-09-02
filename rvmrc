@@ -1,0 +1,3 @@
+export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_06
+#rvm_configure_env=(CFLAGS="-Ofast -m64" CC=/opt/open64/bin/opencc)
+rvm_configure_env=(CFLAGS="-O3 -m64")
