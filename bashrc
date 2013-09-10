@@ -71,4 +71,7 @@ export JRUBY_OPTS="--1.9"
 
 alias urlencode="python -c \"import sys,urllib as ul; print ul.quote_plus(' '.join(sys.argv[1:-1]))\""
 
+export PYTHONPATH=$PYTHONPATH:~/Applications/PyDSTool
+export PYTHON=/usr/bin/python
+
 . ~/Applications/z/z.sh

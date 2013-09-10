@@ -92,10 +92,6 @@ Host sam
   HostName sam.betterific.com
   IdentityFile /home/bradcater/.ssh/betterif.pem
   User ubuntu
-Host sierra
-  HostName ec2-107-20-109-252.compute-1.amazonaws.com
-  IdentityFile /home/bradcater/.ssh/betterif.pem
-  User ubuntu
 Host steamwhistle
   HostName steamwhistle.betterific.com
   IdentityFile /home/bradcater/.ssh/betterif.pem
@@ -104,3 +100,7 @@ Host stella
   HostName stella.betterific.com
   IdentityFile /home/bradcater/.ssh/betterif.pem
   User ec2-user
+Host sean
+  HostName ec2-54-242-15-94.compute-1.amazonaws.com
+  IdentityFile /home/bradcater/.ssh/sean.pem
+  User ubuntu
