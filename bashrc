@@ -19,7 +19,6 @@ alias betterif_app_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@174.129.48.68"
 alias betterif_slave="mosh --ssh \"ssh -i ~/.ssh/betterif-west.pem\" ec2-user@54.245.41.132"
 alias betterif_slave_ssh="ssh -i ~/.ssh/betterif-west.pem ec2-user@54.245.41.132"
 
-alias steamwhistle_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@steamwhistle.betterific.com"
 alias stella_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@stella.betterific.com"
 alias sam_ssh="ssh -i ~/.ssh/betterif.pem ubuntu@sam.betterific.com"
 
@@ -75,3 +74,8 @@ export PYTHONPATH=$PYTHONPATH:~/Applications/PyDSTool
 export PYTHON=/usr/bin/python
 
 . ~/Applications/z/z.sh
+
+export PATH=$PATH:/home/bradcater/perl5/bin:/home/bradcater/perl5/lib:/home/bradcater/Applications/duckduckgo/lib
+
+# added by duckpan installer                                                                                                                          
+eval $(perl -I${HOME}/perl5/lib/perl5 -Mlocal::lib)

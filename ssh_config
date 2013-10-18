@@ -75,11 +75,6 @@ Host dev2
   Port 23377
   User brad
 
-Host betterif
-  HostName 23.21.38.100
-  IdentityFile /home/bradcater/.ssh/betterif.pem
-  User ec2-user
-
 Host bridj
   HostName 107.22.34.122
   IdentityFile /home/bradcater/.ssh/bridj.pem
@@ -92,15 +87,11 @@ Host sam
   HostName sam.betterific.com
   IdentityFile /home/bradcater/.ssh/betterif.pem
   User ubuntu
-Host steamwhistle
-  HostName steamwhistle.betterific.com
-  IdentityFile /home/bradcater/.ssh/betterif.pem
-  User ec2-user
 Host stella
   HostName stella.betterific.com
   IdentityFile /home/bradcater/.ssh/betterif.pem
   User ec2-user
-Host sean
-  HostName ec2-54-242-15-94.compute-1.amazonaws.com
-  IdentityFile /home/bradcater/.ssh/sean.pem
-  User ubuntu
+#Host sean
+#  HostName ec2-54-211-224-63.compute-1.amazonaws.com
+#  IdentityFile /home/bradcater/.ssh/sean.pem
+#  User ubuntu
