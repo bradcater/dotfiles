@@ -81,13 +81,28 @@ Host bridj
   User ec2-user
 
 Host *
+  Compression yes
   ServerAliveInterval 30
 
+# Taken from
+#   http://www.howtoforge.com/anonymous-ssh-sessions-with-tor
+Host anon_*
+  #CheckHostIP no
+  Protocol 2
+  ProxyCommand connect -4 -S localhost:9050 $(tor-resolve %h localhost:9050) %p
 Host sam
   HostName sam.betterific.com
   IdentityFile /home/bradcater/.ssh/betterif.pem
   User ubuntu
+Host anon_sam
+  HostName sam.betterific.com
+  IdentityFile /home/bradcater/.ssh/betterif.pem
+  User ubuntu
 Host stella
+  HostName stella.betterific.com
+  IdentityFile /home/bradcater/.ssh/betterif.pem
+  User ec2-user
+Host anon_stella
   HostName stella.betterific.com
   IdentityFile /home/bradcater/.ssh/betterif.pem
   User ec2-user
