@@ -98,14 +98,6 @@ Host anon_sam
   HostName sam.betterific.com
   IdentityFile /home/bradcater/.ssh/betterif.pem
   User ubuntu
-Host stella
-  HostName stella.betterific.com
-  IdentityFile /home/bradcater/.ssh/betterif.pem
-  User ec2-user
-Host anon_stella
-  HostName stella.betterific.com
-  IdentityFile /home/bradcater/.ssh/betterif.pem
-  User ec2-user
 #Host sean
 #  HostName ec2-54-211-224-63.compute-1.amazonaws.com
 #  IdentityFile /home/bradcater/.ssh/sean.pem
