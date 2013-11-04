@@ -3,7 +3,7 @@
 alias ack="ack-grep"
 alias sus="sort | uniq -c | sort -nr"
 
-alias upgrade="sudo apt-get update && sudo apt-get upgrade"
+alias upgrade="tsocks sudo apt-get update && tsocks sudo apt-get upgrade"
 
 alias fixwindows="gtk-window-decorator --replace &"
 
