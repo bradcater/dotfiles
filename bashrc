@@ -57,6 +57,8 @@ alias copy="~/Applications/copy/x86_64/CopyAgent"
 
 alias mine="bitcoin-miner -o http://bitcoinpool.org:8332 -x socks=127.0.0.1:9050 -u BBBBB -p c1fdc274 -t 2"
 
+alias elasticsearch="cd ~/Applications && ./elasticsearch-0.20.6/bin/elasticsearch -f"
+
 #export GOPATH=$HOME/Copy/go
 #export GOROOT=$HOME/Applications/go
 #PATH=$PATH:$HOME/Applications/go/bin:/usr/local/go/bin
