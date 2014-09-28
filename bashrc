@@ -3,9 +3,13 @@
 alias ack="ack-grep"
 alias sus="sort | uniq -c | sort -nr"
 
+alias rdb="RAILS_ENV=development_brad"
+
 alias upgrade="tsocks sudo apt-get update && tsocks sudo apt-get upgrade"
 
 alias fixwindows="gtk-window-decorator --replace &"
+
+alias rud="rvm use default"
 
 alias bdropbox="HOME=$HOME/.dropbox-betterific /usr/bin/dropbox start"
 alias backup="rvm use default && bundle exec rake backup:db"
@@ -21,6 +25,8 @@ alias betterif_slave_ssh="ssh -i ~/.ssh/betterif-west.pem ec2-user@54.245.41.132
 
 alias stella_ssh="ssh -i ~/.ssh/betterif.pem ec2-user@stella.betterific.com"
 alias sam_ssh="ssh -i ~/.ssh/betterif.pem ubuntu@sam.betterific.com"
+#ec2-54-211-222-10.compute-1.amazonaws.com
+#54.211.222.10
 
 alias bridj="ssh -i ~/.ssh/bridj.pem ec2-user@107.22.34.122"
 alias crr="ssh robotretail@robotretail.webfactional.com"
@@ -75,9 +81,16 @@ alias urlencode="python -c \"import sys,urllib as ul; print ul.quote_plus(' '.jo
 export PYTHONPATH=$PYTHONPATH:~/Applications/PyDSTool
 export PYTHON=/usr/bin/python
 
-. ~/Applications/z/z.sh
-
 export PATH=$PATH:/home/bradcater/perl5/bin:/home/bradcater/perl5/lib:/home/bradcater/Applications/duckduckgo/lib
 
-# added by duckpan installer                                                                                                                          
+export PATH=$PATH:/home/bradcater/lj2
+
+# added by duckpan installer
 eval $(perl -I${HOME}/perl5/lib/perl5 -Mlocal::lib)
+
+export DEFAULT_CERT_FILE=/etc/ssl/certs/cacert.pem
+
+export HISTCONTROL=ignoredups
+export HISTFILESIZE=10000
+
+PATH=$PATH:/home/bradcater/q/l32

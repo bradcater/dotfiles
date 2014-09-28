@@ -6,6 +6,8 @@ filetype off                   " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
@@ -43,8 +45,8 @@ au BufNewFile,BufRead *.god set filetype=ruby
 au BufRead,BufNewFile *.go set filetype=go
 
 " filetype plugin indent on     " required!
-set nocp
-filetype plugin on     " required!
+"set nocp
+"filetype plugin on     " required!
 
 vmap <silent>sf        <Plug>SQLU_Formatter<CR> 
 nmap <silent>scl       <Plug>SQLU_CreateColumnList<CR> 
@@ -63,3 +65,8 @@ nnoremap <space> za
 "   http://www.perturb.org/display/Make_Vim_show_hidden_characters.html
 " Toggle hidden characters
 nmap ,l :set invlist
+
+autocmd BufWritePre *.html.erb,*.rb :%s/\s\+$//e
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'

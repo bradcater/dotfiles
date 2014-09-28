@@ -5,3 +5,12 @@
 [alias]
   accept-ours = "!f() { [ -z \"$@\" ] && set - '.'; git checkout --ours -- \"$@\"; git add -u -- \"$@\"; }; f"
   accept-theirs = "!f() { [ -z \"$@\" ] && set - '.'; git checkout --theirs -- \"$@\"; git add -u -- \"$@\"; }; f"
+[remote "venueplus-staging"]
+  url = git@heroku.com:venueplus-staging.git
+  fetch = +refs/heads/*:refs/remotes/heroku/*
+[remote "venueplus"]
+  url = git@heroku.com:venueplus.git
+  fetch = +refs/heads/*:refs/remotes/heroku/*
+[remote "industryplus"]
+  url = git@heroku.com:industryplus.git
+  fetch = +refs/heads/*:refs/remotes/heroku/*

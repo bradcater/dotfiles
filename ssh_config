@@ -90,15 +90,29 @@ Host anon_*
   #CheckHostIP no
   Protocol 2
   ProxyCommand connect -4 -S localhost:9050 $(tor-resolve %h localhost:9050) %p
-Host sam
-  HostName sam.betterific.com
+Host app
+  HostName app.betterific.com
   IdentityFile /home/bradcater/.ssh/betterif.pem
   User ubuntu
-Host anon_sam
-  HostName sam.betterific.com
+Host petsmart
+  HostName petsmart.betterific.com
   IdentityFile /home/bradcater/.ssh/betterif.pem
   User ubuntu
-#Host sean
-#  HostName ec2-54-211-224-63.compute-1.amazonaws.com
-#  IdentityFile /home/bradcater/.ssh/sean.pem
-#  User ubuntu
+Host search
+  HostName search.betterific.com
+  IdentityFile /home/bradcater/.ssh/betterif.pem
+  User ubuntu
+
+Host robotretail
+  HostName robotretail.webfactional.com
+  User robotretail
+
+Host airport
+  HostName 75.251.123.79
+  User robotretail
+  Port 19876
+
+Host southstation
+  HostName 50.12.134.174
+  User robotretail
+  Port 19876
