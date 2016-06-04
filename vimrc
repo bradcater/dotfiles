@@ -22,7 +22,7 @@ set incsearch
 set ignorecase
 set smartcase
 syntax on
-let g:user_zen_settings = {
+let g:user_emmet_settings = {
   \  'indentation' : '  ',
   \  'perl' : {
   \    'aliases' : {
@@ -34,8 +34,8 @@ let g:user_zen_settings = {
   \    }
   \  }
   \}
-let g:user_zen_expandabbr_key = '<c-e>,'
-let g:use_zen_complete_tag = 1
+let g:user_emmet_expandabbr_key = '<c-e>,'
+let g:use_emmet_complete_tag = 1
 
 set expandtab
 set tabstop=2
@@ -70,3 +70,9 @@ autocmd BufWritePre *.html.erb,*.rb :%s/\s\+$//e
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" Taken from
+" http://superuser.com/questions/302186/vim-scrolls-very-slow-when-a-line-is-too-long
+set ttyfast " u got a fast terminal
+set ttyscroll=3
+set lazyredraw " to avoid scrolling problems
