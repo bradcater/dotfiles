@@ -1,0 +1,13 @@
+[global]
+device = gpu
+floatX = float32
+
+[gcc]
+cxxflags = -L/usr/local/amdlibm-3.1-lin64/lib64
+
+[lib]
+amdlibm = True
+cnmem = .2
+
+[nvcc]
+fastmath = True
