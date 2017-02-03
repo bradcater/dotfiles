@@ -107,3 +107,8 @@ alias upgrade="sudo apt-get update && sudo apt-get upgrade"
 
 export PATH=$PATH:/home/bradcater/Applications/eclipse/java-mars/eclipse
 export PATH=$PATH:/home/bradcater/Applications/xgboost
+
+export PATH=$PATH:/home/bradcater/Applications/rgf1.2/bin
+
+export RUBY_GC_MALLOC_LIMIT=60000000
+export RUBY_FREE_MIN=200000

@@ -1,13 +1,22 @@
 [global]
-device = gpu
+device = cuda
 floatX = float32
+optimizer = fast_run
+allow_gc = False
+openmp = True
 
 [gcc]
-cxxflags = -L/usr/local/amdlibm-3.1-lin64/lib64
+cxxflags = -L/usr/local/amdlibm/lib64/dynamic
 
 [lib]
 amdlibm = True
-cnmem = .2
+cnmem = 0.9
 
 [nvcc]
 fastmath = True
+
+[blas]
+ldflags = -llapack -lblas
+
+[dnn]
+enabled = True
