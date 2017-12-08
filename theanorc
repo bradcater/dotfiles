@@ -14,6 +14,7 @@ cnmem = 0.9
 
 [nvcc]
 fastmath = True
+flags=-D_FORCE_INLINES
 
 [blas]
 ldflags = -llapack -lblas

@@ -110,5 +110,11 @@ export PATH=$PATH:/home/bradcater/Applications/xgboost
 
 export PATH=$PATH:/home/bradcater/Applications/rgf1.2/bin
 
-export RUBY_GC_MALLOC_LIMIT=60000000
-export RUBY_FREE_MIN=200000
+export PATH=$PATH:/usr/local/pgsql/bin
+
+export WORKON_HOME=~/Envs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+. /usr/local/bin/virtualenvwrapper.sh
+
+export PATH=$PATH:/home/bradcater/Applications/scala-2.12.1/bin/

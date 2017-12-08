@@ -1,12 +1,12 @@
-" Standard .vimrc extensions.
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set nocompatible               " be iMproved
-filetype off                   " required!
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" FIXME: What was this for?
+" set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " let Vundle manage Vundle
 " required! 
