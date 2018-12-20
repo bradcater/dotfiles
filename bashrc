@@ -99,11 +99,11 @@ export PATH=$PATH:/home/bradcater/Applications/node-v4.2.4-linux-x64/bin
 
 export HADOOP_HOME=/home/bradcater/Applications/hadoop
 export PATH=$PATH:$HADOOP_HOME/bin
-export JAVA_HOME=/usr/lib/jvm/java-7-oracle
+#export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 
 export PATH=$PATH:/home/bradcater/Applications/waffles/bin
 
-alias upgrade="sudo apt-get update && sudo apt-get upgrade"
+alias upgrade="sudo apt update && sudo apt upgrade"
 
 export PATH=$PATH:/home/bradcater/Applications/eclipse/java-mars/eclipse
 export PATH=$PATH:/home/bradcater/Applications/xgboost
@@ -118,3 +118,14 @@ export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 . /usr/local/bin/virtualenvwrapper.sh
 
 export PATH=$PATH:/home/bradcater/Applications/scala-2.12.1/bin/
+
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+export JRE_HOME=/usr/lib/jvm/java-8-oracle/jre
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/x86_64-linux-gnu/:/usr/lib/nvidia-384/:/home/bradcater/Applications/Python3.7.1/lib/ #:/home/bradcater/Envs/options3.7.1/lib/python3.7/site-packages/llvmlite/binding/
+
+export PATH=/usr/lib/ccache:$PATH
+
+export PATH=/home/bradcater/.cargo/bin:$PATH
+
+export PATH=/home/bradcater/Applications/eplot:$PATH

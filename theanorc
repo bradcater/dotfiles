@@ -17,7 +17,7 @@ fastmath = True
 flags=-D_FORCE_INLINES
 
 [blas]
-ldflags = -llapack -lblas
+ldflags = -L/usr/lib/ -llapack -lblas -lf77blas -latlas -lgfortran
 
 [dnn]
 enabled = True
