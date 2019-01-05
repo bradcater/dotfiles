@@ -1,12 +1,12 @@
 [global]
-device = cuda
+#device = cuda
 floatX = float32
 optimizer = fast_run
 allow_gc = False
 openmp = True
 
 [gcc]
-cxxflags = -L/usr/local/amdlibm/lib64/dynamic
+cxxflags = -L/usr/local/amdlibm-3.2.2/lib/dynamic
 
 [lib]
 amdlibm = True
@@ -14,10 +14,12 @@ cnmem = 0.9
 
 [nvcc]
 fastmath = True
-flags=-D_FORCE_INLINES
+flags = -D_FORCE_INLINES
 
 [blas]
-ldflags = -L/usr/lib/ -llapack -lblas -lf77blas -latlas -lgfortran
+#ldflags = -L/usr/lib/ -llapack -lblas -lf77blas -latlas -lgfortran
+#ldflags = -L/usr/lib/ -llapack -lblas -lf77blas -lgfortran
+ldflags = -L/opt/intel/lib/intel64 -L/opt/intel/mkl/lib/intel64 -lmkl_rt -lpthread
 
 [dnn]
 enabled = True
