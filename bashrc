@@ -129,3 +129,7 @@ export PATH=/usr/lib/ccache:$PATH
 export PATH=/home/bradcater/.cargo/bin:$PATH
 
 export PATH=/home/bradcater/Applications/eplot:$PATH
+
+export PATH=/home/bradcater/Applications/libsvm-3.24:$PATH
+
+source /home/bradcater/.bazel/bin/bazel-complete.bash

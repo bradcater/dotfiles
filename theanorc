@@ -1,4 +1,5 @@
 [global]
+#root = /usr/local/cuda-10.0/lib64/stubs
 #device = cuda
 floatX = float32
 optimizer = fast_run
@@ -23,3 +24,6 @@ ldflags = -L/opt/intel/lib/intel64 -L/opt/intel/mkl/lib/intel64 -lmkl_rt -lpthre
 
 [dnn]
 enabled = True
+
+[ctc]
+root = /home/bradcater/Applications/warp-ctc
